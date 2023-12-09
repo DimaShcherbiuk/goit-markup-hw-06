@@ -31,7 +31,7 @@
             <li><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <button class="mobile-menu-open-btn" type="button">
+        <button class="mobile-menu-open-btn" type="button" menu-modal-open>
           <svg
             class="mobile-menu-open-btn-icon"
             width="24"
@@ -64,7 +64,7 @@
       <section class="box-hero section">
         <div class="container container-hero">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
-          <button class="button-order-name" type="button">
+          <button class="button-order-name" type="button" data-modal-open>
             <span class="button-text">Order Service</span>
           </button>
         </div>
@@ -712,9 +712,9 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
-      <div class="modal-window">
-        <button type="button" class="close-modal">
+    <div class="backdrop" data-modal>
+      <div id="modal" class="modal-window">
+        <button type="button" class="close-modal" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -798,9 +798,9 @@
     </div>
 
     <!-- Modal Menu Mobile -->
-    <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-wrapper" menu-modal>
       <div class="container mobile-menu-container">
-        <button type="button" class="close-menu">
+        <button type="button" class="close-menu" menu-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -860,5 +860,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

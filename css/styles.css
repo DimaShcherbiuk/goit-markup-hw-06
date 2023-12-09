@@ -129,32 +129,6 @@ img {
 
   .nav-link {
     display: none;
-    color: #2e2f42;
-    text-decoration: none;
-    padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
-  }
-
-  .current {
-    position: relative;
-    color: #404bbf;
-  }
-
-  .nav-link.current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #404bbf;
   }
 
   .mobile-menu-open-btn {
@@ -169,29 +143,6 @@ img {
 
   .address-box {
     display: none;
-    align-items: flex-end;
-    font-style: normal;
-  }
-
-  .address-list {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-  .address-link {
-    text-decoration: none;
-    color: #434455;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .address-link:hover,
-  .address-link:focus {
-    color: #404bbf;
   }
 
   /*=========/HEADER============*/
@@ -235,11 +186,6 @@ img {
     }
   }
 
-  .container-hero {
-    display: flex;
-    flex-direction: column;
-  }
-
   .title-hero {
     max-width: 215px;
     color: #fff;
@@ -276,10 +222,6 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .button-order-name:hover,
-  .button-order-name:focus {
-    background-color: #404bbf;
-  }
   /*=======/HERO SECTION========*/
 
   /*===========SECTION 1========*/
@@ -312,14 +254,6 @@ img {
 
   .box-advant-icon-back {
     display: none;
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    background: #f4f4fd;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
   }
 
   .box-advant-title {
@@ -425,11 +359,6 @@ img {
     fill: #f4f4fd;
   }
 
-  .social-links-item .link:hover,
-  .social-links-item .link:focus {
-    background-color: #404bbf;
-  }
-
   /*==========/SECTION 2========*/
 
   /*===========SECTION 3========*/
@@ -468,13 +397,6 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .box-portf-product:hover {
-    background: #fff;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  }
-
   .box-portf-img {
     display: block;
     margin: 0;
@@ -486,23 +408,6 @@ img {
 
   .hidden-discription-portf {
     display: none;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    color: #f4f4fd;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .box-portf-product:hover .hidden-discription-portf {
-    transform: translateY(0);
   }
 
   .text-foto-portf {
@@ -604,11 +509,6 @@ img {
 
   .social-links-footer .social-icon {
     fill: #f4f4fd;
-  }
-
-  .social-links-footer .link:hover,
-  .social-links-footer .link:focus {
-    background-color: #31d0aa;
   }
 
   /*=====Footer subscribe=====*/
@@ -747,13 +647,6 @@ img {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .close-modal:hover,
-  .close-modal:focus {
-    background-color: #404bbf;
-    fill: #ffffff;
-    border: none;
   }
 
   .icon-close {
@@ -940,7 +833,6 @@ img {
   /*===Modal Menu MOBILE===*/
 
   @media screen and (max-width: 767px) {
-
     .mobile-menu-wrapper {
       position: fixed;
       top: 0;
@@ -978,8 +870,8 @@ img {
 
     .close-menu {
       position: absolute;
-      top: 18px;
-      right: 18px;
+      top: 16px;
+      right: 11px;
       width: 24px;
       height: 24px;
       border-radius: 50%;
@@ -1326,14 +1218,6 @@ img {
 
   .box-advant-icon-back {
     display: none;
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    background: #f4f4fd;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
   }
 
   .box-advant-title {
@@ -1678,6 +1562,10 @@ img {
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: #404bbf;
   }
 
   .button-svg {
@@ -2570,6 +2458,11 @@ img {
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: #404bbf;
   }
 
   .button-svg {

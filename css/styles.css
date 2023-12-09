@@ -859,13 +859,15 @@ img {
     color: rgba(46, 47, 66, 0.4);
   }
 
-  .contact-form-checkbox-block {
+  /* .contact-form-checkbox-block {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
-  }
+  } */
 
   .contact-form-checkbox-label {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -873,7 +875,7 @@ img {
   }
 
   .contact-form-checkbox-label-span {
-    width: 16px;
+    width: 22px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
@@ -950,6 +952,7 @@ img {
       /* transform: translateX(100%); */
       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding-bottom: 30px;
     }
 
     .container {
@@ -1046,6 +1049,7 @@ img {
       justify-content: center;
       align-items: center;
       gap: 40px;
+
     }
 
     .mobile-social-links-list-item .link {
